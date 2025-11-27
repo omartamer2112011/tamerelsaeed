@@ -1,0 +1,38 @@
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Arial',sans-serif; }
+
+/* Body & Background */
+body { background-color:#000; color:#FFD700; height:100vh; overflow:hidden; position:relative; }
+
+/* Particles background */
+#particles-js { position:absolute; width:100%; height:100%; z-index:0; }
+
+/* Hero Section */
+.hero { position:relative; z-index:5; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+.hero-name { font-size:4rem; color:#FFD700; text-shadow:0 0 20px #FFD700,0 0 40px #FFD700,0 0 60px #FFD700; animation: glowName 2s infinite alternate; }
+@keyframes glowName { 0% { text-shadow:0 0 10px #FFD700,0 0 20px #FFD700,0 0 30px #FFD700;} 100% { text-shadow:0 0 30px #FFD700,0 0 60px #FFD700,0 0 90px #FFD700; } }
+
+/* More Information Button */
+#moreInfoBtn { margin-top:20px; padding:12px 30px; background-color:#FFD700; border:none; color:#000; font-weight:bold; cursor:pointer; border-radius:5px; transition: transform 0.3s, box-shadow 0.3s; }
+#moreInfoBtn:hover { transform:scale(1.1); box-shadow:0 0 20px #FFD700; }
+
+/* Designer Button (⋮) */
+.designer-btn { position:fixed; top:20px; left:20px; font-size:2.5rem; color:#FFD700; cursor:pointer; z-index:10; transition: transform 0.3s; }
+.designer-btn:hover { transform:scale(1.4); }
+
+/* Designer Modal */
+.designer-modal { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); display:flex; justify-content:center; align-items:center; visibility:hidden; opacity:0; transition: opacity 0.4s; z-index:20; }
+.designer-modal.show { visibility:visible; opacity:1; }
+.designer-content { text-align:center; color:#FFD700; }
+.designer-content h2 { font-size:2rem; margin-bottom:10px; }
+.designer-content p { color:#ccc; margin-bottom:20px; }
+.designer-content button { padding:10px 20px; background:#FFD700; border:none; color:#000; cursor:pointer; border-radius:4px; }
+
+/* Info Modal */
+.info-modal { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); display:flex; justify-content:center; align-items:center; visibility:hidden; opacity:0; transition: opacity 0.4s; z-index:25; }
+.info-modal.show { visibility:visible; opacity:1; }
+.info-content { text-align:center; color:#FFD700; }
+.info-content h2 { font-size:2rem; margin-bottom:10px; }
+.info-content .small-text { font-size:0.9rem; color:#ccc; margin-bottom:15px; }
+.info-content a { color:#FFD700; text-decoration:underline; }
+.info-content button { margin-top:20px; padding:10px 20px; background:#FFD700; border:none; color:#000; cursor:pointer; border-radius:4px; }
